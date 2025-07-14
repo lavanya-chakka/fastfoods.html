@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Place Your Order</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('https://cdn.pixabay.com/photo/2017/06/02/18/24/appetite-2367027_1280.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+        header {
+            background-color: #111112;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .order-form {
+            background-color: rgba(255, 255, 255, 0.9);
+            max-width: 400px;
+            margin: 40px auto;
+            padding: 25px;
+            border-radius: 10px;
+        }
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        button {
+            background-color: #ff6347;
+            color: white;
+            padding: 10px;
+            width: 100%;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #e5533f;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Place Your Order</h1>
+    </header>
+
+    <div class="order-form">
+        <form action="confirm.html">
+            <label for="name"><b>Name:</b></label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="location"><b>Location:</b></label>
+            <input type="text" id="location" name="location" required>
+
+            <label for="item"><b>Item Name:</b></label>
+            <select id="item" name="item" required>
+                <option>Veg Pizza</option>
+                <option>Paneer Roll</option>
+                <option>French Fries</option>
+                <option>Chicken Biryani</option>
+                <option>Grilled Chicken</option>
+            </select>
+
+            <label for="quantity"><b>No. of Items:</b></label>
+            <input type="number" id="quantity" name="quantity" min="1" required>
+
+            <button type="submit">Submit Order</button>
+        </form>
+    </div>
+
+</body>
+</html>
+
